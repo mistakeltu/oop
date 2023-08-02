@@ -4,10 +4,23 @@
 
 class Kibiras3
 {
-    public $akmenuKiekis = 0;
+    private $akmenuKiekis = 0;
+
+    public function __construct()
+    {
+        $this->akmenuKiekis;
+    }
 
     public function Prideti1Akmeni()
     {
-        $akmenuKiekis = rand(2, 5);
+        $rand = rand(2, 5);
+        $this->akmenuKiekis += $rand;
+    }
+
+    public function __get($prop)
+    {
+        if ($prop === 'akmenuKiekis') {
+            return $this->akmenuKiekis;
+        }
     }
 }

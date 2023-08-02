@@ -3,6 +3,7 @@
 require __DIR__ . '/Kibiras1.php';
 require __DIR__ . '/Pinigine.php';
 require __DIR__ . '/Kibiras2.php';
+require __DIR__ . '/KibirasNePo1.php';
 
 // $kibiras = new Kibiras1;
 $pinigine = new Pinigine;
@@ -28,8 +29,13 @@ $pinigine = new Pinigine;
 
 // echo $pinigine->skaiciuoti();
 
-$kibiras1 = Kibiras2::add(5);
-$kibiras2 = Kibiras2::add(5);
-$kibiras3 = Kibiras2::add(5);
+// $kibiras1 = Kibiras2::add(5);
+// $kibiras2 = Kibiras2::add(5);
+// $kibiras3 = Kibiras2::add(5);
 
-echo Kibiras2::gautiAkmenuKiekiVisuoseKibiruose();
+// echo Kibiras2::gautiAkmenuKiekiVisuoseKibiruose();
+
+
+$kibiriux = new Kibiras3();
+
+echo $kibiriux->Prideti1Akmeni();
